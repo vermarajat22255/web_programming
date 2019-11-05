@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>People Finder</title>
+ <link rel="stylesheet" href="/public/site.css">
+</head>
+<body>
+    <h1>People Finder.</h1>
+<main>
+        <p>This is a Simple search website which will search the people on the basis of the name user will enter in the form<br>
+        Also, this can show the details of a single person upon getting the Id of the person.
+        </p>
+
+    <form action="/search" method="POST" class="new-post-form">
+        <label for="search_bar">Search here</label>
+      <input id="search_bar" type="text" name="search_bar" placeholder="Type name" class="full-width-input"/>
+    
+    <button type="submit">Search</button>
+    <button type="reset">Clear</button>
+  </form>
+        {{{body}}}
+</main>
+</body>
+</html>
