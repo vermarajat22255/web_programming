@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>People Found</title>
+        <link rel="stylesheet" href="/public/site.css">
+    </head>
+    <body>
+        <h1>Person Found</h1>
+        <h2>Info for: "{{firstName}} {{lastName}}"</h2>
+        <main>
+            {{#if id}}
+            <dl>
+                <dt>{{{id}}}</dt>
+                <dt>First Name</dt>
+                <dd>{{{firstName}}}</dd>
+                <dt>Last Name</dt>
+                <dd>{{{lastName}}}</dd>
+                <dt>Address</dt>
+                <dd>{{{address}}}</dd>
+                <dt>Zip Code</dt>
+                <dd>{{{zip}}}</dd>
+                <dt>Phone</dt>
+                <dd>{{{phone}}}</dd>
+                <dt>Social Security Number</dt>
+                <dd>{{{ssn}}}</dd>
+            </dl>
+            {{else}}
+            <p class="not-found">We're sorry, but no results were found for.</p>
+            {{/if}}
+        </main> 
+    </body>
+</html>

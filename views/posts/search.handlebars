@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>People Found</title>
+        <link rel="stylesheet" href="/public/site.css">
+    </head>
+    <body>
+        <h1>People Found</h1>
+        <h2>List of names - </h2>
+        <main>
+            {{#if people}}
+            {{#each people}}
+            <ul>
+                <li>
+                    <a href="/details/{{{this}}}">{{{this}}}</a>
+                </li>
+            </ul>
+            {{/each}}
+            {{else}}
+            <p class="not-found">We're sorry, but no results were found for {{searchKey}}.</p>
+            {{/if}}
+        </main>
+    </body>
+</html>
