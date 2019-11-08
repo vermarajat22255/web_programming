@@ -2,10 +2,32 @@
 <html>
     <head>
         <link rel="stylesheet" href="/public/site.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <main>
+        
+        <header>
+            
+            <label for="search_bar">Search</label>
+            <input id="search_bar" type="text" name="search_bar" placeholder="e.g. AMZN"/>
+            <button type="button" id="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+            
+            <div id="right">
+            <a href="login.html">Login</a>
+            <a href="signUp.html">Sign Up</a>
+            </div>
+        </header>     
+            
             {{{body}}}
+        
+        <footer>
+            <p>
+                It's easy and it's free. Select a stock, and we will show you the current price and a three-month price chart. Decide if you think the price of your selected stock will go up or down during the next trading day. Press a green arrow for "up" or a red one for "down." That's it.
+                When you vote "up" or "down," we combine your vote with thousands of other stock predictions we received predicting the same future stock price. We immediately show you what percentage of people voted "up" on your selected stock and what percentage voted "down." We also show you another crucial piece of data: how accurate we believe this crowd prediction is, based on our patented analysis of our extensive database of past-prediction results.
+                We put additional information at your fingertips in case you want to delve deeper or explore other investment possibilities. We show you whether the community overall is bullish or bearish on your selected stock, on its sector, and its related industry.
+            </p>
+        </footer>
         </main>
     </body>
 </html>

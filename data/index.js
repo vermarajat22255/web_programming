@@ -1,10 +1,8 @@
-const peopleRoutes = require("./people");
-
 let constructorMethod = app => {
-    app.use("/", peopleRoutes);
+    //    app.use("/", peopleRoutes);
 };
 
 module.exports = {
-    constructorMethod,
-    people: require("./people"),
+    constructorMethod
+    //    people: require("./people"),
 };
