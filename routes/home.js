@@ -1,15 +1,12 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const data = require("../data");
+const userData = require('../data/user');
 
-router.get("/", async(req, res) => {
-    try {
-        res.render("posts/index");
-    } catch (e) {
-        res.status(404).json({ message: "home not found" });
+router.get('/', async(req, res) => {
+    if (req.session.userInfo) {
+        res.render('posts/stocks', { title: "Ticker Talk", stocks: req.session.favList, userInfo: req.session.userInfo });
+    } else {
+        res.render('posts/index', { title: "Ticker Talk" });
     }
 });
-
-
-
 module.exports = router;
