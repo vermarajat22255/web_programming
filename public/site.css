@@ -1,8 +1,38 @@
 html,
 body {
     font-size: 14pt;
-    height: auto;
+    height: 100%;
+    overflow: hidden;
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    position: relative;
+}
+
+.ing {
+    font-size: 150px;
+    font-family: serif;
+}
+
+.ind {
+    background-image: url("/public/stock.jpg");
+    width: 100%;
+    height: 450px;
+    text-align: center;
+}
+
+.main-container {
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    /* height of your footer */
+}
+
+.navbar {
+    min-height: 75vh;
+    background-color: #e9e9e9;
+    display: inline-block;
 }
 
 header {
@@ -59,47 +89,136 @@ p {
     font-size: 1rem;
 }
 
-.post {
-    width: 75%;
-    border-bottom: 1px dashed #333;
+#upVote:hover {
+    color: rgb(233, 241, 241);
 }
 
-.new-post-form {
-    max-width: 300px;
+#downVote:hover {
+    color: rgb(241, 237, 241);
 }
 
-.new-post-form .full-width-input {
-    display: block;
-    min-height: 3em;
-    margin: 10px 0;
+#fav:hover {
+    color: rgb(240, 236, 240);
+}
+
+#buy:hover {
+    color: rgb(240, 236, 240);
+}
+
+#buy:search {
+    color: rgb(240, 236, 240);
+}
+
+.highcharts-figure .chart-container {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+@media (max-width: 600px) {
+    .highcharts-figure {
+        width: 100%;
+    }
+    .highcharts-figure .chart-container {
+        width: 300px;
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
     width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+
+/* #right-gauge{
+    border-style: solid;
+} */
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+
+.my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+
+.my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+}
+
+.my-legend a {
+    color: #777;
 }
 
 label {
     font-weight: bold;
     text-align: center;
-}
-
-.error-list li {
-    color: #ff0000;
-}
-
-.author-link,
-.author-link:link {
-    color: #228b22;
-}
-
-.author-link:visited {
-    font-style: italic;
-}
-
-.author-link:hover {
-    font-style: normal;
-    font-weight: 700;
-}
-
-.author-link:active {
-    color: #ff0000;
 }
 
 p .not-found {
@@ -112,37 +231,53 @@ footer {
     background-color: #e9e9e9;
     color: black;
     width: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    background-color: black;
+    text-decoration-color: #EBEBEB;
+    color: #EBEBEB;
 }
 
 a:link,
 a:visited,
-button {
-    background-color: #4CAF50;
+input[type="button"] {
+    background-color: rgb(17, 17, 17);
     /* Green */
     border: none;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+    width: auto;
 }
 
 a:hover,
 a:active,
 button:hover {
-    background-color: rgb(65, 76, 241);
+    background-color: #222;
+    text-decoration-color: white;
 }
 
 form {
-    display: inline-flex;
+    display: flexbox;
     text-align: left;
 }
 
-input[type=text] {
+input[type=text],
+input[type=password] {
     width: auto;
     height: auto;
     box-sizing: border-box;
