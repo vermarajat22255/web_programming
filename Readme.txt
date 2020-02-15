@@ -1,15 +1,13 @@
-use seed.js to populate data 
+use seed.js to populate data before starting
 
 CS546 Final Project: Ticker Talk
 
 Group Member: (Group 18)
 
 Rajat Verma
-Ankit Talaviya
-Neil Sharma
 Deep Chitroda
 
-GitHub Link: 
+GitHub Link: https://github.com/vermarajat22255/web_programming/edit/development/
 
 Setup Guide:
 
@@ -19,6 +17,7 @@ Setup Guide:
 
 "npm start": Start Web server
 
+Go to the browser and hit "localhost:3000/"
 
 Extra Feature:
 Search by speech : Initialize the speech script by double tapping any where in body when you want to control
