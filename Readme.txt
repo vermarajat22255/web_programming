@@ -1,3 +1,13 @@
+_______________________________________________________________________________________________________________
+  Highlights-
+
+- How to use bcrypt to encrypt password and store in DB
+- Using express Session and middlewares
+- Perform complex NO SQL transcation
+- Focus on accessibity of the application to visually impaired community ex- blind or color blind people, validating against 
+  Tota11y app
+- writing syntatically correct HTML using apt tags and validating the code againt a HTML Validator
+_______________________________________________________________________________________________________________
 use seed.js to populate data before starting
 
 CS546 Final Project: Ticker Talk
@@ -7,7 +17,7 @@ Group Member: (Group 18)
 Rajat Verma
 Deep Chitroda
 
-GitHub Link: https://github.com/vermarajat22255/web_programming/edit/development/
+GitHub Link: https://github.com/vermarajat22255/web_programming
 
 Setup Guide:
 
